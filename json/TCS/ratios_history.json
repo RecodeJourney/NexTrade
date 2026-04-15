@@ -1,0 +1,98 @@
+{
+  "Mar 2015": {
+    "debtor_days": 79.0,
+    "inventory_days": null,
+    "days_payable": null,
+    "cash_conversion_cycle": 79.0,
+    "working_capital_days": 33.0,
+    "roce_pct": 50.0
+  },
+  "Mar 2016": {
+    "debtor_days": 81.0,
+    "inventory_days": null,
+    "days_payable": null,
+    "cash_conversion_cycle": 81.0,
+    "working_capital_days": 62.0,
+    "roce_pct": 51.0
+  },
+  "Mar 2017": {
+    "debtor_days": 70.0,
+    "inventory_days": null,
+    "days_payable": null,
+    "cash_conversion_cycle": 70.0,
+    "working_capital_days": 62.0,
+    "roce_pct": 44.0
+  },
+  "Mar 2018": {
+    "debtor_days": 74.0,
+    "inventory_days": null,
+    "days_payable": null,
+    "cash_conversion_cycle": 74.0,
+    "working_capital_days": 61.0,
+    "roce_pct": 39.0
+  },
+  "Mar 2019": {
+    "debtor_days": 68.0,
+    "inventory_days": null,
+    "days_payable": null,
+    "cash_conversion_cycle": 68.0,
+    "working_capital_days": 70.0,
+    "roce_pct": 47.0
+  },
+  "Mar 2020": {
+    "debtor_days": 71.0,
+    "inventory_days": null,
+    "days_payable": null,
+    "cash_conversion_cycle": 71.0,
+    "working_capital_days": 64.0,
+    "roce_pct": 47.0
+  },
+  "Mar 2021": {
+    "debtor_days": 67.0,
+    "inventory_days": null,
+    "days_payable": null,
+    "cash_conversion_cycle": 67.0,
+    "working_capital_days": 59.0,
+    "roce_pct": 49.0
+  },
+  "Mar 2022": {
+    "debtor_days": 80.0,
+    "inventory_days": null,
+    "days_payable": null,
+    "cash_conversion_cycle": 80.0,
+    "working_capital_days": 33.0,
+    "roce_pct": 54.0
+  },
+  "Mar 2023": {
+    "debtor_days": 81.0,
+    "inventory_days": null,
+    "days_payable": null,
+    "cash_conversion_cycle": 81.0,
+    "working_capital_days": 30.0,
+    "roce_pct": 59.0
+  },
+  "Mar 2024": {
+    "debtor_days": 81.0,
+    "inventory_days": null,
+    "days_payable": null,
+    "cash_conversion_cycle": 81.0,
+    "working_capital_days": 34.0,
+    "roce_pct": 64.0
+  },
+  "Mar 2025": {
+    "debtor_days": 84.0,
+    "inventory_days": null,
+    "days_payable": null,
+    "cash_conversion_cycle": 84.0,
+    "working_capital_days": 34.0,
+    "roce_pct": 65.0
+  },
+  "Mar 2026": {
+    "debtor_days": 79.0,
+    "inventory_days": null,
+    "days_payable": null,
+    "cash_conversion_cycle": 79.0,
+    "working_capital_days": 85.0,
+    "roce_pct": 63.0
+  }
+}

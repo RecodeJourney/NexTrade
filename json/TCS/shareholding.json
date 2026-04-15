@@ -1,0 +1,178 @@
+{
+  "quarterly:Mar 2023": {
+    "promoters": 72.3,
+    "fiis": 12.72,
+    "diis": 9.58,
+    "government": 0.05,
+    "public": 5.36,
+    "no_of_shareholders": 2499384.0
+  },
+  "quarterly:Jun 2023": {
+    "promoters": 72.3,
+    "fiis": 12.46,
+    "diis": 9.8,
+    "government": 0.05,
+    "public": 5.38,
+    "no_of_shareholders": 2502835.0
+  },
+  "quarterly:Sep 2023": {
+    "promoters": 72.3,
+    "fiis": 12.47,
+    "diis": 10.01,
+    "government": 0.05,
+    "public": 5.17,
+    "no_of_shareholders": 2367003.0
+  },
+  "quarterly:Dec 2023": {
+    "promoters": 72.41,
+    "fiis": 12.46,
+    "diis": 10.03,
+    "government": 0.05,
+    "public": 5.03,
+    "no_of_shareholders": 2336016.0
+  },
+  "quarterly:Mar 2024": {
+    "promoters": 71.77,
+    "fiis": 12.7,
+    "diis": 10.61,
+    "government": 0.06,
+    "public": 4.86,
+    "no_of_shareholders": 2203209.0
+  },
+  "quarterly:Jun 2024": {
+    "promoters": 71.77,
+    "fiis": 12.35,
+    "diis": 11.0,
+    "government": 0.06,
+    "public": 4.82,
+    "no_of_shareholders": 2181391.0
+  },
+  "quarterly:Sep 2024": {
+    "promoters": 71.77,
+    "fiis": 12.66,
+    "diis": 10.86,
+    "government": 0.06,
+    "public": 4.66,
+    "no_of_shareholders": 2093962.0
+  },
+  "quarterly:Dec 2024": {
+    "promoters": 71.77,
+    "fiis": 12.68,
+    "diis": 10.86,
+    "government": 0.06,
+    "public": 4.63,
+    "no_of_shareholders": 2075117.0
+  },
+  "quarterly:Mar 2025": {
+    "promoters": 71.77,
+    "fiis": 12.04,
+    "diis": 11.49,
+    "government": 0.06,
+    "public": 4.63,
+    "no_of_shareholders": 2115093.0
+  },
+  "quarterly:Jun 2025": {
+    "promoters": 71.77,
+    "fiis": 11.48,
+    "diis": 11.95,
+    "government": 0.06,
+    "public": 4.77,
+    "no_of_shareholders": 2164289.0
+  },
+  "quarterly:Sep 2025": {
+    "promoters": 71.77,
+    "fiis": 10.33,
+    "diis": 12.64,
+    "government": 0.06,
+    "public": 5.21,
+    "no_of_shareholders": 2388232.0
+  },
+  "quarterly:Dec 2025": {
+    "promoters": 71.77,
+    "fiis": 10.37,
+    "diis": 12.81,
+    "government": 0.06,
+    "public": 4.98,
+    "no_of_shareholders": 2332275.0
+  },
+  "yearly:Mar 2017": {
+    "promoters": 73.31,
+    "fiis": 16.9,
+    "diis": 5.36,
+    "government": 0.05,
+    "public": 4.38,
+    "no_of_shareholders": 637799.0
+  },
+  "yearly:Mar 2018": {
+    "promoters": 71.92,
+    "fiis": 16.88,
+    "diis": 6.93,
+    "government": 0.05,
+    "public": 4.22,
+    "no_of_shareholders": 550651.0
+  },
+  "yearly:Mar 2019": {
+    "promoters": 72.05,
+    "fiis": 15.8,
+    "diis": 7.78,
+    "government": 0.05,
+    "public": 4.32,
+    "no_of_shareholders": 723894.0
+  },
+  "yearly:Mar 2020": {
+    "promoters": 72.05,
+    "fiis": 15.74,
+    "diis": 8.0,
+    "government": 0.06,
+    "public": 4.14,
+    "no_of_shareholders": 858825.0
+  },
+  "yearly:Mar 2021": {
+    "promoters": 72.19,
+    "fiis": 15.62,
+    "diis": 7.83,
+    "government": 0.06,
+    "public": 4.31,
+    "no_of_shareholders": 1058901.0
+  },
+  "yearly:Mar 2022": {
+    "promoters": 72.3,
+    "fiis": 14.15,
+    "diis": 7.81,
+    "government": 0.04,
+    "public": 5.7,
+    "no_of_shareholders": 2474310.0
+  },
+  "yearly:Mar 2023": {
+    "promoters": 72.3,
+    "fiis": 12.72,
+    "diis": 9.58,
+    "government": 0.05,
+    "public": 5.36,
+    "no_of_shareholders": 2499384.0
+  },
+  "yearly:Mar 2024": {
+    "promoters": 71.77,
+    "fiis": 12.7,
+    "diis": 10.61,
+    "government": 0.06,
+    "public": 4.86,
+    "no_of_shareholders": 2203209.0
+  },
+  "yearly:Mar 2025": {
+    "promoters": 71.77,
+    "fiis": 12.04,
+    "diis": 11.49,
+    "government": 0.06,
+    "public": 4.63,
+    "no_of_shareholders": 2115093.0
+  },
+  "yearly:Dec 2025": {
+    "promoters": 71.77,
+    "fiis": 10.37,
+    "diis": 12.81,
+    "government": 0.06,
+    "public": 4.98,
+    "no_of_shareholders": 2332275.0
+  }
+}

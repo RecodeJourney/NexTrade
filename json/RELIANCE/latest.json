@@ -1,0 +1,642 @@
+{
+  "symbol": "RELIANCE",
+  "company_info": {
+    "symbol": "RELIANCE",
+    "company_name": "Reliance Industries Ltd",
+    "description": "Reliance was founded by Dhirubhai Ambani and is now promoted and managed by his elder son, Mukesh Dhirubhai Ambani. Ambani's family has about 50% shareholding in the conglomerate.",
+    "source_url": "https://www.screener.in/company/RELIANCE/consolidated/",
+    "website": "http://www.ril.com",
+    "bse_url": "https://www.bseindia.com/stock-share-price/reliance-industries-ltd/RELIANCE/500325/",
+    "nse_url": "https://www.nseindia.com/get-quotes/equity?symbol=RELIANCE"
+  },
+  "top_ratios": {
+    "market_cap": 1819660.0,
+    "current_price": 1344.0,
+    "high_low": null,
+    "stock_p_e": 23.7,
+    "book_value": 648.0,
+    "dividend_yield": 0.41,
+    "roce": 9.69,
+    "roe": 8.4,
+    "face_value": 10.0
+  },
+  "profit_loss": {
+    "Mar 2014": {
+      "sales": 433521.0,
+      "expenses": 398586.0,
+      "operating_profit": 34935.0,
+      "opm_pct": 8.0,
+      "other_income": 8865.0,
+      "interest": 3836.0,
+      "depreciation": 11201.0,
+      "profit_before_tax": 28763.0,
+      "tax_pct": 22.0,
+      "net_profit": 22548.0,
+      "eps_in_rs": 16.31,
+      "dividend_payout_pct": 12.0
+    },
+    "Mar 2015": {
+      "sales": 374372.0,
+      "expenses": 336923.0,
+      "operating_profit": 37449.0,
+      "opm_pct": 10.0,
+      "other_income": 8528.0,
+      "interest": 3316.0,
+      "depreciation": 11547.0,
+      "profit_before_tax": 31114.0,
+      "tax_pct": 24.0,
+      "net_profit": 23640.0,
+      "eps_in_rs": 17.07,
+      "dividend_payout_pct": 12.0
+    },
+    "Mar 2016": {
+      "sales": 272583.0,
+      "expenses": 230802.0,
+      "operating_profit": 41781.0,
+      "opm_pct": 15.0,
+      "other_income": 12212.0,
+      "interest": 3691.0,
+      "depreciation": 11565.0,
+      "profit_before_tax": 38737.0,
+      "tax_pct": 23.0,
+      "net_profit": 29861.0,
+      "eps_in_rs": 21.51,
+      "dividend_payout_pct": 10.0
+    },
+    "Mar 2017": {
+      "sales": 303954.0,
+      "expenses": 257647.0,
+      "operating_profit": 46307.0,
+      "opm_pct": 15.0,
+      "other_income": 9222.0,
+      "interest": 3849.0,
+      "depreciation": 11646.0,
+      "profit_before_tax": 40034.0,
+      "tax_pct": 25.0,
+      "net_profit": 29833.0,
+      "eps_in_rs": 21.55,
+      "dividend_payout_pct": 11.0
+    },
+    "Mar 2018": {
+      "sales": 390823.0,
+      "expenses": 326508.0,
+      "operating_profit": 64315.0,
+      "opm_pct": 16.0,
+      "other_income": 9869.0,
+      "interest": 8052.0,
+      "depreciation": 16706.0,
+      "profit_before_tax": 49426.0,
+      "tax_pct": 27.0,
+      "net_profit": 36080.0,
+      "eps_in_rs": 26.69,
+      "dividend_payout_pct": 10.0
+    },
+    "Mar 2019": {
+      "sales": 568337.0,
+      "expenses": 484087.0,
+      "operating_profit": 84250.0,
+      "opm_pct": 15.0,
+      "other_income": 8406.0,
+      "interest": 16495.0,
+      "depreciation": 20934.0,
+      "profit_before_tax": 55227.0,
+      "tax_pct": 28.0,
+      "net_profit": 39837.0,
+      "eps_in_rs": 29.28,
+      "dividend_payout_pct": 10.0
+    },
+    "Mar 2020": {
+      "sales": 596679.0,
+      "expenses": 507413.0,
+      "operating_profit": 89266.0,
+      "opm_pct": 15.0,
+      "other_income": 8570.0,
+      "interest": 22027.0,
+      "depreciation": 22203.0,
+      "profit_before_tax": 53606.0,
+      "tax_pct": 26.0,
+      "net_profit": 39880.0,
+      "eps_in_rs": 29.1,
+      "dividend_payout_pct": 10.0
+    },
+    "Mar 2021": {
+      "sales": 466307.0,
+      "expenses": 385517.0,
+      "operating_profit": 80790.0,
+      "opm_pct": 17.0,
+      "other_income": 22432.0,
+      "interest": 21189.0,
+      "depreciation": 26572.0,
+      "profit_before_tax": 55461.0,
+      "tax_pct": 3.0,
+      "net_profit": 53739.0,
+      "eps_in_rs": 38.75,
+      "dividend_payout_pct": 9.0
+    },
+    "Mar 2022": {
+      "sales": 694673.0,
+      "expenses": 586092.0,
+      "operating_profit": 108581.0,
+      "opm_pct": 16.0,
+      "other_income": 19600.0,
+      "interest": 14584.0,
+      "depreciation": 29782.0,
+      "profit_before_tax": 83815.0,
+      "tax_pct": 19.0,
+      "net_profit": 67845.0,
+      "eps_in_rs": 44.87,
+      "dividend_payout_pct": 9.0
+    },
+    "Mar 2023": {
+      "sales": 876396.0,
+      "expenses": 734078.0,
+      "operating_profit": 142318.0,
+      "opm_pct": 16.0,
+      "other_income": 12020.0,
+      "interest": 19571.0,
+      "depreciation": 40303.0,
+      "profit_before_tax": 94464.0,
+      "tax_pct": 22.0,
+      "net_profit": 74088.0,
+      "eps_in_rs": 49.29,
+      "dividend_payout_pct": 9.0
+    },
+    "Mar 2024": {
+      "sales": 899041.0,
+      "expenses": 736543.0,
+      "operating_profit": 162498.0,
+      "opm_pct": 18.0,
+      "other_income": 15792.0,
+      "interest": 23118.0,
+      "depreciation": 50832.0,
+      "profit_before_tax": 104340.0,
+      "tax_pct": 25.0,
+      "net_profit": 79020.0,
+      "eps_in_rs": 51.45,
+      "dividend_payout_pct": 10.0
+    },
+    "Mar 2025": {
+      "sales": 962820.0,
+      "expenses": 797222.0,
+      "operating_profit": 165598.0,
+      "opm_pct": 17.0,
+      "other_income": 17824.0,
+      "interest": 24269.0,
+      "depreciation": 53136.0,
+      "profit_before_tax": 106017.0,
+      "tax_pct": 24.0,
+      "net_profit": 81309.0,
+      "eps_in_rs": 51.47,
+      "dividend_payout_pct": 11.0
+    },
+    "TTM": {
+      "sales": 1024548.0,
+      "expenses": 845908.0,
+      "operating_profit": 178640.0,
+      "opm_pct": 17.0,
+      "other_income": 29420.0,
+      "interest": 26631.0,
+      "depreciation": 56359.0,
+      "profit_before_tax": 125070.0,
+      "tax_pct": null,
+      "net_profit": 97776.0,
+      "eps_in_rs": 61.49,
+      "dividend_payout_pct": null
+    }
+  },
+  "balance_sheet": {
+    "Mar 2014": {
+      "equity_capital": 2940.0,
+      "reserves": 195747.0,
+      "borrowings": 138761.0,
+      "other_liabilities": 91395.0,
+      "total_liabilities": 428843.0,
+      "fixed_assets": 141417.0,
+      "cwip": 91494.0,
+      "investments": 60602.0,
+      "other_assets": 135330.0,
+      "total_assets": 428843.0
+    },
+    "Mar 2015": {
+      "equity_capital": 2943.0,
+      "reserves": 215556.0,
+      "borrowings": 168251.0,
+      "other_liabilities": 117736.0,
+      "total_liabilities": 504486.0,
+      "fixed_assets": 156458.0,
+      "cwip": 166462.0,
+      "investments": 76451.0,
+      "other_assets": 105115.0,
+      "total_assets": 504486.0
+    },
+    "Mar 2016": {
+      "equity_capital": 2948.0,
+      "reserves": 228608.0,
+      "borrowings": 194714.0,
+      "other_liabilities": 172727.0,
+      "total_liabilities": 598997.0,
+      "fixed_assets": 184910.0,
+      "cwip": 228697.0,
+      "investments": 84015.0,
+      "other_assets": 101375.0,
+      "total_assets": 598997.0
+    },
+    "Mar 2017": {
+      "equity_capital": 2959.0,
+      "reserves": 260750.0,
+      "borrowings": 217475.0,
+      "other_liabilities": 225618.0,
+      "total_liabilities": 706802.0,
+      "fixed_assets": 198526.0,
+      "cwip": 324837.0,
+      "investments": 82899.0,
+      "other_assets": 100540.0,
+      "total_assets": 706802.0
+    },
+    "Mar 2018": {
+      "equity_capital": 5922.0,
+      "reserves": 287584.0,
+      "borrowings": 239843.0,
+      "other_liabilities": 277924.0,
+      "total_liabilities": 811273.0,
+      "fixed_assets": 403885.0,
+      "cwip": 187022.0,
+      "investments": 82862.0,
+      "other_assets": 137504.0,
+      "total_assets": 811273.0
+    },
+    "Mar 2019": {
+      "equity_capital": 5926.0,
+      "reserves": 381186.0,
+      "borrowings": 307714.0,
+      "other_liabilities": 302804.0,
+      "total_liabilities": 997630.0,
+      "fixed_assets": 398374.0,
+      "cwip": 179463.0,
+      "investments": 235635.0,
+      "other_assets": 184158.0,
+      "total_assets": 997630.0
+    },
+    "Mar 2020": {
+      "equity_capital": 6339.0,
+      "reserves": 442827.0,
+      "borrowings": 355133.0,
+      "other_liabilities": 358716.0,
+      "total_liabilities": 1163015.0,
+      "fixed_assets": 532658.0,
+      "cwip": 109106.0,
+      "investments": 276767.0,
+      "other_assets": 244484.0,
+      "total_assets": 1163015.0
+    },
+    "Mar 2021": {
+      "equity_capital": 6445.0,
+      "reserves": 693727.0,
+      "borrowings": 278962.0,
+      "other_liabilities": 340931.0,
+      "total_liabilities": 1320065.0,
+      "fixed_assets": 541258.0,
+      "cwip": 125953.0,
+      "investments": 364828.0,
+      "other_assets": 288026.0,
+      "total_assets": 1320065.0
+    },
+    "Mar 2022": {
+      "equity_capital": 6765.0,
+      "reserves": 772720.0,
+      "borrowings": 319158.0,
+      "other_liabilities": 399979.0,
+      "total_liabilities": 1498622.0,
+      "fixed_assets": 627798.0,
+      "cwip": 172506.0,
+      "investments": 394264.0,
+      "other_assets": 304054.0,
+      "total_assets": 1498622.0
+    },
+    "Mar 2023": {
+      "equity_capital": 6766.0,
+      "reserves": 709106.0,
+      "borrowings": 451664.0,
+      "other_liabilities": 438346.0,
+      "total_liabilities": 1605882.0,
+      "fixed_assets": 724805.0,
+      "cwip": 293752.0,
+      "investments": 235560.0,
+      "other_assets": 351765.0,
+      "total_assets": 1605882.0
+    },
+    "Mar 2024": {
+      "equity_capital": 6766.0,
+      "reserves": 786715.0,
+      "borrowings": 350719.0,
+      "other_liabilities": 610848.0,
+      "total_liabilities": 1755048.0,
+      "fixed_assets": 779985.0,
+      "cwip": 338855.0,
+      "investments": 225672.0,
+      "other_assets": 410536.0,
+      "total_assets": 1755048.0
+    },
+    "Mar 2025": {
+      "equity_capital": 13532.0,
+      "reserves": 829668.0,
+      "borrowings": 374313.0,
+      "other_liabilities": 732200.0,
+      "total_liabilities": 1949713.0,
+      "fixed_assets": 999393.0,
+      "cwip": 262358.0,
+      "investments": 242381.0,
+      "other_assets": 445581.0,
+      "total_assets": 1949713.0
+    },
+    "Sep 2025": {
+      "equity_capital": 13532.0,
+      "reserves": 863748.0,
+      "borrowings": 374593.0,
+      "other_liabilities": 787073.0,
+      "total_liabilities": 2038946.0,
+      "fixed_assets": 1096375.0,
+      "cwip": 217097.0,
+      "investments": 256335.0,
+      "other_assets": 469139.0,
+      "total_assets": 2038946.0
+    }
+  },
+  "ratios_history": {
+    "Mar 2014": {
+      "debtor_days": 8.0,
+      "inventory_days": 57.0,
+      "days_payable": 61.0,
+      "cash_conversion_cycle": 4.0,
+      "working_capital_days": -30.0,
+      "roce_pct": 10.0
+    },
+    "Mar 2015": {
+      "debtor_days": 5.0,
+      "inventory_days": 66.0,
+      "days_payable": 74.0,
+      "cash_conversion_cycle": -2.0,
+      "working_capital_days": -64.0,
+      "roce_pct": 9.0
+    },
+    "Mar 2016": {
+      "debtor_days": 6.0,
+      "inventory_days": 90.0,
+      "days_payable": 117.0,
+      "cash_conversion_cycle": -21.0,
+      "working_capital_days": -148.0,
+      "roce_pct": 10.0
+    },
+    "Mar 2017": {
+      "debtor_days": 10.0,
+      "inventory_days": 84.0,
+      "days_payable": 132.0,
+      "cash_conversion_cycle": -38.0,
+      "working_capital_days": -179.0,
+      "roce_pct": 10.0
+    },
+    "Mar 2018": {
+      "debtor_days": 16.0,
+      "inventory_days": 83.0,
+      "days_payable": 146.0,
+      "cash_conversion_cycle": -46.0,
+      "working_capital_days": -179.0,
+      "roce_pct": 11.0
+    },
+    "Mar 2019": {
+      "debtor_days": 19.0,
+      "inventory_days": 63.0,
+      "days_payable": 100.0,
+      "cash_conversion_cycle": -18.0,
+      "working_capital_days": -108.0,
+      "roce_pct": 12.0
+    },
+    "Mar 2020": {
+      "debtor_days": 12.0,
+      "inventory_days": 67.0,
+      "days_payable": 87.0,
+      "cash_conversion_cycle": -9.0,
+      "working_capital_days": -158.0,
+      "roce_pct": 11.0
+    },
+    "Mar 2021": {
+      "debtor_days": 15.0,
+      "inventory_days": 102.0,
+      "days_payable": 136.0,
+      "cash_conversion_cycle": -19.0,
+      "working_capital_days": -58.0,
+      "roce_pct": 8.0
+    },
+    "Mar 2022": {
+      "debtor_days": 12.0,
+      "inventory_days": 83.0,
+      "days_payable": 123.0,
+      "cash_conversion_cycle": -27.0,
+      "working_capital_days": -56.0,
+      "roce_pct": 8.0
+    },
+    "Mar 2023": {
+      "debtor_days": 12.0,
+      "inventory_days": 87.0,
+      "days_payable": 91.0,
+      "cash_conversion_cycle": 7.0,
+      "working_capital_days": -66.0,
+      "roce_pct": 9.0
+    },
+    "Mar 2024": {
+      "debtor_days": 13.0,
+      "inventory_days": 95.0,
+      "days_payable": 111.0,
+      "cash_conversion_cycle": -3.0,
+      "working_capital_days": -53.0,
+      "roce_pct": 10.0
+    },
+    "Mar 2025": {
+      "debtor_days": 16.0,
+      "inventory_days": 85.0,
+      "days_payable": 108.0,
+      "cash_conversion_cycle": -8.0,
+      "working_capital_days": -68.0,
+      "roce_pct": 10.0
+    }
+  },
+  "shareholding": {
+    "quarterly:Mar 2023": {
+      "promoters": 50.41,
+      "fiis": 22.49,
+      "diis": 16.06,
+      "government": 0.16,
+      "public": 10.89,
+      "no_of_shareholders": 3639396.0
+    },
+    "quarterly:Jun 2023": {
+      "promoters": 50.39,
+      "fiis": 22.55,
+      "diis": 16.13,
+      "government": 0.17,
+      "public": 10.76,
+      "no_of_shareholders": 3506867.0
+    },
+    "quarterly:Sep 2023": {
+      "promoters": 50.27,
+      "fiis": 22.6,
+      "diis": 15.99,
+      "government": 0.17,
+      "public": 10.98,
+      "no_of_shareholders": 3698648.0
+    },
+    "quarterly:Dec 2023": {
+      "promoters": 50.3,
+      "fiis": 22.13,
+      "diis": 16.59,
+      "government": 0.18,
+      "public": 10.8,
+      "no_of_shareholders": 3613814.0
+    },
+    "quarterly:Mar 2024": {
+      "promoters": 50.31,
+      "fiis": 22.06,
+      "diis": 16.98,
+      "government": 0.19,
+      "public": 10.46,
+      "no_of_shareholders": 3463276.0
+    },
+    "quarterly:Jun 2024": {
+      "promoters": 50.33,
+      "fiis": 21.75,
+      "diis": 17.3,
+      "government": 0.19,
+      "public": 10.43,
+      "no_of_shareholders": 3493125.0
+    },
+    "quarterly:Sep 2024": {
+      "promoters": 50.24,
+      "fiis": 21.3,
+      "diis": 17.61,
+      "government": 0.19,
+      "public": 10.67,
+      "no_of_shareholders": 3834968.0
+    },
+    "quarterly:Dec 2024": {
+      "promoters": 50.13,
+      "fiis": 19.16,
+      "diis": 19.02,
+      "government": 0.18,
+      "public": 11.52,
+      "no_of_shareholders": 4714959.0
+    },
+    "quarterly:Mar 2025": {
+      "promoters": 50.1,
+      "fiis": 19.07,
+      "diis": 19.36,
+      "government": 0.17,
+      "public": 11.29,
+      "no_of_shareholders": 4765728.0
+    },
+    "quarterly:Jun 2025": {
+      "promoters": 50.07,
+      "fiis": 19.21,
+      "diis": 19.72,
+      "government": 0.17,
+      "public": 10.84,
+      "no_of_shareholders": 4435756.0
+    },
+    "quarterly:Sep 2025": {
+      "promoters": 50.01,
+      "fiis": 18.65,
+      "diis": 20.25,
+      "government": 0.17,
+      "public": 10.92,
+      "no_of_shareholders": 4393764.0
+    },
+    "quarterly:Dec 2025": {
+      "promoters": 50.0,
+      "fiis": 19.09,
+      "diis": 20.1,
+      "government": 0.17,
+      "public": 10.64,
+      "no_of_shareholders": 4206159.0
+    },
+    "yearly:Mar 2017": {
+      "promoters": 46.32,
+      "fiis": 22.58,
+      "diis": 11.85,
+      "government": 0.14,
+      "public": 19.12,
+      "no_of_shareholders": 2501302.0
+    },
+    "yearly:Mar 2018": {
+      "promoters": 47.45,
+      "fiis": 24.46,
+      "diis": 11.23,
+      "government": 0.15,
+      "public": 16.72,
+      "no_of_shareholders": 2266000.0
+    },
+    "yearly:Mar 2019": {
+      "promoters": 47.27,
+      "fiis": 24.39,
+      "diis": 11.86,
+      "government": 0.18,
+      "public": 16.29,
+      "no_of_shareholders": 2211231.0
+    },
+    "yearly:Mar 2020": {
+      "promoters": 50.07,
+      "fiis": 24.08,
+      "diis": 13.78,
+      "government": 0.2,
+      "public": 11.87,
+      "no_of_shareholders": 2632168.0
+    },
+    "yearly:Mar 2021": {
+      "promoters": 50.58,
+      "fiis": 25.66,
+      "diis": 12.62,
+      "government": 0.2,
+      "public": 10.94,
+      "no_of_shareholders": 3031272.0
+    },
+    "yearly:Mar 2022": {
+      "promoters": 50.66,
+      "fiis": 24.23,
+      "diis": 14.23,
+      "government": 0.17,
+      "public": 10.71,
+      "no_of_shareholders": 3327847.0
+    },
+    "yearly:Mar 2023": {
+      "promoters": 50.41,
+      "fiis": 22.49,
+      "diis": 16.06,
+      "government": 0.16,
+      "public": 10.89,
+      "no_of_shareholders": 3639396.0
+    },
+    "yearly:Mar 2024": {
+      "promoters": 50.31,
+      "fiis": 22.06,
+      "diis": 16.98,
+      "government": 0.19,
+      "public": 10.46,
+      "no_of_shareholders": 3463276.0
+    },
+    "yearly:Mar 2025": {
+      "promoters": 50.1,
+      "fiis": 19.07,
+      "diis": 19.36,
+      "government": 0.17,
+      "public": 11.29,
+      "no_of_shareholders": 4765728.0
+    },
+    "yearly:Dec 2025": {
+      "promoters": 50.0,
+      "fiis": 19.09,
+      "diis": 20.1,
+      "government": 0.17,
+      "public": 10.64,
+      "no_of_shareholders": 4206159.0
+    }
+  },
+  "scraped_at": "2026-04-15T20:14:18.979379+00:00"
+}

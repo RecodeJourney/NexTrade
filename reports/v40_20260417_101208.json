@@ -1,0 +1,45 @@
+{
+  "companies": [
+    {
+      "company_name": "Infosys Ltd",
+      "current_category": null,
+      "metrics": {
+        "balance_sheet_year_end": 2025,
+        "borrowings": 8755.0,
+        "borrowings_to_reserves": 0.08646401200916488,
+        "business_start_year": null,
+        "future_growth_years": null,
+        "government_ownership_percent": null,
+        "growth_reason": null,
+        "is_government_company": null,
+        "reserves": 101256.0
+      },
+      "planned_db_action": "no_change",
+      "reasons": [
+        "Review: government/company ownership classification is missing.",
+        "Review: business_start_year is missing.",
+        "Review: future_growth_years is missing.",
+        "Pass: borrowings/reserves is 0.09, within 0.25."
+      ],
+      "status": "REVIEW",
+      "symbol": "INFY"
+    }
+  ],
+  "db_action_counts": null,
+  "generated_at": "2026-04-17T04:42:08.043629+00:00",
+  "mode": "dry_run",
+  "settings": {
+    "as_of_year": 2026,
+    "db_path": "/Users/gauravsingh/Trading_project/NexTrade/screener.db",
+    "max_borrowings_to_reserves": 0.25,
+    "min_business_age_years": 15,
+    "min_future_growth_years": 15,
+    "remove_review": false,
+    "research_path": "/Users/gauravsingh/Trading_project/NexTrade/data/v40_research.json"
+  },
+  "status_counts": {
+    "FAIL": 0,
+    "PASS": 0,
+    "REVIEW": 1
+  }
+}

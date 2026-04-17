@@ -1,0 +1,147 @@
+{
+  "companies": [
+    {
+      "company_name": "Infosys Ltd",
+      "current_category": "V40",
+      "metrics": {
+        "auto_metrics": {
+          "sales_cagr_percent": 11.31375732896991,
+          "sales_end": 162990.0,
+          "sales_end_year": 2025,
+          "sales_history_years": 11,
+          "sales_start": 50133.0,
+          "sales_start_year": 2014
+        },
+        "balance_sheet_year_end": 2025,
+        "borrowings": 8755.0,
+        "borrowings_to_reserves": 0.08646401200916488,
+        "business_age_years": 45,
+        "business_start_year": 1981,
+        "future_growth_years": 15.0,
+        "government_ownership_percent": 0.2,
+        "growth_reason": "Auto-estimated 15 years from 11.31% sales CAGR between 2014 and 2025; manual long-term thesis should still be reviewed.",
+        "is_government_company": false,
+        "reserves": 101256.0,
+        "sources": {
+          "business_start_year": "wikidata:Q26989:P571",
+          "future_growth_years": "derived_from_sales_cagr",
+          "government_ownership_percent": "local_shareholding_json",
+          "growth_reason": "derived_from_sales_cagr",
+          "is_government_company": "derived_from_government_ownership"
+        }
+      },
+      "planned_db_action": "keep_V40",
+      "reasons": [
+        "Pass: marked as non-government company.",
+        "Pass: business age is 45 years.",
+        "Pass: future growth visibility is 15 years.",
+        "Pass: borrowings/reserves is 0.09, within 0.25."
+      ],
+      "status": "PASS",
+      "symbol": "INFY"
+    },
+    {
+      "company_name": "Reliance Industries Ltd",
+      "current_category": null,
+      "metrics": {
+        "auto_metrics": {
+          "sales_cagr_percent": 7.5234469688604255,
+          "sales_end": 962820.0,
+          "sales_end_year": 2025,
+          "sales_history_years": 11,
+          "sales_start": 433521.0,
+          "sales_start_year": 2014
+        },
+        "balance_sheet_year_end": 2025,
+        "borrowings": 374593.0,
+        "borrowings_to_reserves": 0.43368320389743303,
+        "business_age_years": 68,
+        "business_start_year": 1958,
+        "future_growth_years": 15.0,
+        "government_ownership_percent": 0.17,
+        "growth_reason": "Auto-estimated 15 years from 7.52% sales CAGR between 2014 and 2025; manual long-term thesis should still be reviewed.",
+        "is_government_company": false,
+        "reserves": 863748.0,
+        "sources": {
+          "business_start_year": "wikidata:Q908931:P571",
+          "future_growth_years": "derived_from_sales_cagr",
+          "government_ownership_percent": "local_shareholding_json",
+          "growth_reason": "derived_from_sales_cagr",
+          "is_government_company": "derived_from_government_ownership"
+        }
+      },
+      "planned_db_action": "no_change",
+      "reasons": [
+        "Pass: marked as non-government company.",
+        "Pass: business age is 68 years.",
+        "Pass: future growth visibility is 15 years.",
+        "Fail: borrowings/reserves is 0.43, above 0.25."
+      ],
+      "status": "FAIL",
+      "symbol": "RELIANCE"
+    },
+    {
+      "company_name": "Tata Consultancy Services Ltd",
+      "current_category": "V40",
+      "metrics": {
+        "auto_metrics": {
+          "sales_cagr_percent": 9.887563324789351,
+          "sales_end": 267021.0,
+          "sales_end_year": 2026,
+          "sales_history_years": 11,
+          "sales_start": 94648.0,
+          "sales_start_year": 2015
+        },
+        "balance_sheet_year_end": 2026,
+        "borrowings": 11283.0,
+        "borrowings_to_reserves": 0.1055689664851513,
+        "business_age_years": 58,
+        "business_start_year": 1968,
+        "future_growth_years": 15.0,
+        "government_ownership_percent": 0.06,
+        "growth_reason": "Auto-estimated 15 years from 9.89% sales CAGR between 2015 and 2026; manual long-term thesis should still be reviewed.",
+        "is_government_company": false,
+        "reserves": 106878.0,
+        "sources": {
+          "business_start_year": "wikidata:Q13227919:P571",
+          "future_growth_years": "derived_from_sales_cagr",
+          "government_ownership_percent": "local_shareholding_json",
+          "growth_reason": "derived_from_sales_cagr",
+          "is_government_company": "derived_from_government_ownership"
+        }
+      },
+      "planned_db_action": "keep_V40",
+      "reasons": [
+        "Pass: marked as non-government company.",
+        "Pass: business age is 58 years.",
+        "Pass: future growth visibility is 15 years.",
+        "Pass: borrowings/reserves is 0.11, within 0.25."
+      ],
+      "status": "PASS",
+      "symbol": "TCS"
+    }
+  ],
+  "db_action_counts": {
+    "keep_V40": 2,
+    "no_change": 1,
+    "remove_V40": 0,
+    "set_V40": 0
+  },
+  "generated_at": "2026-04-17T05:09:25.699135+00:00",
+  "mode": "update",
+  "settings": {
+    "as_of_year": 2026,
+    "auto_enrich": true,
+    "db_path": "/Users/gauravsingh/Trading_project/NexTrade/screener.db",
+    "max_borrowings_to_reserves": 0.25,
+    "min_business_age_years": 15,
+    "min_future_growth_years": 15,
+    "research_path": "/Users/gauravsingh/Trading_project/NexTrade/data/v40_research.json",
+    "update_research": true
+  },
+  "status_counts": {
+    "FAIL": 1,
+    "PASS": 2,
+    "REVIEW": 0
+  }
+}

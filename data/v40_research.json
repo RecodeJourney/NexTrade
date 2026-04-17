@@ -1,0 +1,57 @@
+{
+  "INFY": {
+    "business_start_year": 1981,
+    "future_growth_years": 15.0,
+    "government_ownership_percent": 0.2,
+    "growth_reason": "Auto-estimated 15 years from 11.31% sales CAGR between 2014 and 2025; manual long-term thesis should still be reviewed.",
+    "is_government_company": false,
+    "notes": "",
+    "sources": {
+      "business_start_year": "wikidata:Q26989:P571",
+      "future_growth_years": "derived_from_sales_cagr",
+      "government_ownership_percent": "local_shareholding_json",
+      "growth_reason": "derived_from_sales_cagr",
+      "is_government_company": "derived_from_government_ownership"
+    }
+  },
+  "RELIANCE": {
+    "business_start_year": 1958,
+    "future_growth_years": 15.0,
+    "government_ownership_percent": 0.17,
+    "growth_reason": "Auto-estimated 15 years from 7.52% sales CAGR between 2014 and 2025; manual long-term thesis should still be reviewed.",
+    "is_government_company": false,
+    "notes": "",
+    "sources": {
+      "business_start_year": "wikidata:Q908931:P571",
+      "future_growth_years": "derived_from_sales_cagr",
+      "government_ownership_percent": "local_shareholding_json",
+      "growth_reason": "derived_from_sales_cagr",
+      "is_government_company": "derived_from_government_ownership"
+    }
+  },
+  "TCS": {
+    "business_start_year": 1968,
+    "future_growth_years": 15.0,
+    "government_ownership_percent": 0.06,
+    "growth_reason": "Auto-estimated 15 years from 9.89% sales CAGR between 2015 and 2026; manual long-term thesis should still be reviewed.",
+    "is_government_company": false,
+    "notes": "",
+    "sources": {
+      "business_start_year": "wikidata:Q13227919:P571",
+      "future_growth_years": "derived_from_sales_cagr",
+      "government_ownership_percent": "local_shareholding_json",
+      "growth_reason": "derived_from_sales_cagr",
+      "is_government_company": "derived_from_government_ownership"
+    }
+  },
+  "_instructions": {
+    "notes": "Market leadership and pricing power are intentionally not checked here because they will be reviewed manually.",
+    "purpose": "Manual V40 research inputs. V40.py ignores keys starting with underscore.",
+    "required_fields": {
+      "business_start_year": "Year the business actually started, not the stock listing year.",
+      "future_growth_years": "Your estimate of visible growth runway. V40 requires at least 15.",
+      "government_ownership_percent": "Optional numeric government ownership percentage when known.",
+      "is_government_company": "true if government/PSU controlled, false otherwise."
+    }
+  }
+}

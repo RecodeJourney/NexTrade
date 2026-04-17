@@ -30,10 +30,6 @@ def normalize_symbol(symbol: str) -> str:
     return clean_symbol
 
 
-def build_company_url(symbol: str) -> str:
-    return BASE_URL.format(symbol=quote(normalize_symbol(symbol), safe=""))
-
-
 def fetch_html(url: str) -> str:
     response = requests.get(url, headers=HEADERS, timeout=30)
     response.raise_for_status()
@@ -45,6 +41,34 @@ def _text_or_none(element: Optional[Tag]) -> Optional[str]:
         return None
     text = element.get_text(" ", strip=True)
     return text or None
+
+
+def _transpose_metric_table(table: Optional[Tag]) -> Dict[str, Dict[str, Optional[float]]]:
+    if not table:
+        return {}
+
+    headers = [
+        normalize_period(th.get_text(" ", strip=True))
+        for th in table.select("thead th")[1:]
+    ]
+    table_data: Dict[str, Dict[str, Optional[float]]] = {
+        header: {} for header in headers if header
+    }
+
+    for row in table.select("tbody tr"):
+        cols = row.select("td")
+        if not cols:
+            continue
+
+        metric = normalize_key(cols[0].get_text(" ", strip=True))
+        values = [td.get_text(" ", strip=True) for td in cols[1:]]
+
+        for period, value in zip(headers, values):
+            if not period:
+                continue
+            table_data.setdefault(period, {})[metric] = clean_number(value)
+
+    return table_data
 
 
 def extract_company_info(html: str, symbol: str, url: str) -> Dict[str, Optional[str]]:
@@ -92,34 +116,6 @@ def extract_top_ratios(html: str) -> Dict[str, Optional[float]]:
     return ratios
 
 
-def _transpose_metric_table(table: Optional[Tag]) -> Dict[str, Dict[str, Optional[float]]]:
-    if not table:
-        return {}
-
-    headers = [
-        normalize_period(th.get_text(" ", strip=True))
-        for th in table.select("thead th")[1:]
-    ]
-    table_data: Dict[str, Dict[str, Optional[float]]] = {
-        header: {} for header in headers if header
-    }
-
-    for row in table.select("tbody tr"):
-        cols = row.select("td")
-        if not cols:
-            continue
-
-        metric = normalize_key(cols[0].get_text(" ", strip=True))
-        values = [td.get_text(" ", strip=True) for td in cols[1:]]
-
-        for period, value in zip(headers, values):
-            if not period:
-                continue
-            table_data.setdefault(period, {})[metric] = clean_number(value)
-
-    return table_data
-
-
 def extract_profit_loss_table(html: str) -> Dict[str, Dict[str, Optional[float]]]:
     soup = BeautifulSoup(html, "html.parser")
     return _transpose_metric_table(soup.select_one("#profit-loss table.data-table"))
@@ -156,10 +152,9 @@ def extract_shareholding(html: str) -> Dict[str, Dict[str, Optional[float]]]:
 
 def scrape_company(symbol: str) -> Dict[str, Any]:
     clean_symbol = normalize_symbol(symbol)
-    url = build_company_url(clean_symbol)
+    url = BASE_URL.format(symbol=quote(normalize_symbol(clean_symbol), safe=""))
     html = fetch_html(url)
-
-    return {
+    data = {
         "symbol": clean_symbol,
         "company_info": extract_company_info(html, clean_symbol, url),
         "top_ratios": extract_top_ratios(html),
@@ -169,6 +164,8 @@ def scrape_company(symbol: str) -> Dict[str, Any]:
         "shareholding": extract_shareholding(html),
         "scraped_at": datetime.now(timezone.utc).isoformat(),
     }
+    save_runtime_json(data)
+    return data
 
 
 def save_runtime_json(data: Dict[str, Any], output_dir: str = RUNTIME_JSON_DIR) -> Dict[str, Path]:
@@ -217,7 +214,6 @@ def main() -> None:
 
     for symbol in symbols:
         data = scrape_company(symbol)
-        written_files = save_runtime_json(data)
         _print_summary(
             data,
             (
@@ -230,7 +226,6 @@ def main() -> None:
                 "shareholding",
             ),
         )
-        print(f"\nSaved JSON files under: {written_files['latest'].parent}")
 
 
 if __name__ == "__main__":

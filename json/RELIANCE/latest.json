@@ -10,12 +10,12 @@
     "nse_url": "https://www.nseindia.com/get-quotes/equity?symbol=RELIANCE"
   },
   "top_ratios": {
-    "market_cap": 1805570.0,
-    "current_price": 1334.0,
+    "market_cap": 1847191.0,
+    "current_price": 1365.0,
     "high_low": null,
-    "stock_p_e": 23.5,
+    "stock_p_e": 24.1,
     "book_value": 648.0,
-    "dividend_yield": 0.41,
+    "dividend_yield": 0.4,
     "roce": 9.69,
     "roe": 8.4,
     "face_value": 10.0
@@ -638,5 +638,5 @@
       "no_of_shareholders": 4206159.0
     }
   },
-  "scraped_at": "2026-04-16T04:52:38.414500+00:00"
+  "scraped_at": "2026-04-19T03:13:42.121764+00:00"
 }

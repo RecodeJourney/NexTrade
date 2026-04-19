@@ -11,6 +11,27 @@ QUICK_RATIOS = [
 ]
 
 
+def login(page):
+    page.goto("https://www.screener.in/login/")
+
+    page.fill('input[name="username"]', "angelscur@gmail.com")
+    page.fill('input[name="password"]', "Nava@#1352")
+
+    page.click('button[type="submit"]')
+    page.wait_for_timeout(2000)
+
+    # ✅ Correct login check
+    if "login" in page.url:
+        print("❌ Login failed")
+        error = page.query_selector(".errorlist, .alert")
+        if error:
+            print("Error:", error.inner_text())
+        return False
+    else:
+        print("✅ Login successful:", page.url)
+        return True
+
+
 def extract_ratios(page):
     ratios = {}
     items = page.query_selector_all("#top-ratios li")
@@ -24,27 +45,61 @@ def extract_ratios(page):
 
 
 def add_quick_ratio(page, text):
-    search = page.query_selector("#quick-ratio-search")
-    search.fill(text)
+    print(f"➡️ Adding: {text}")
 
-    page.wait_for_selector(".dropdown-content li", state="attached")
+    search = page.locator("#quick-ratio-search")
 
-    options = page.query_selector_all(".dropdown-content li")
-    for opt in options:
+    search.click()
+    search.fill("")  # clear
+    search.type(text, delay=100)
+
+    page.wait_for_timeout(500)
+
+    options = page.locator(".dropdown-content li")
+
+    found = False
+    for i in range(options.count()):
+        opt = options.nth(i)
         if text.lower() in opt.inner_text().lower():
             opt.click()
+            found = True
             break
 
-    page.wait_for_timeout(500)  # allow DOM update
+    if not found:
+        print(f"⚠️ Option not found: {text}")
+        return
+
+    # ✅ Wait for DOM update
+    try:
+        page.wait_for_selector("li[data-source='quick-ratio']", timeout=3000)
+        print(f"✅ Added: {text}")
+    except:
+        print(f"⚠️ UI did not update for: {text}")
+
+    page.wait_for_timeout(500)
 
 
 def scrape():
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
+        browser = p.chromium.launch(headless=False)
         page = browser.new_page()
 
+        success = login(page)
+        if not success:
+            browser.close()
+            return {}
+
+        # 🔥 FORCE NAVIGATION AFTER LOGIN
         page.goto(URL)
-        page.wait_for_selector("#top-ratios")
+
+        try:
+            page.wait_for_selector("#top-ratios", timeout=10000)
+            print("✅ Landed on company page")
+        except:
+            print("❌ Failed to load company page")
+            print("Current URL:", page.url)
+            browser.close()
+            return {}
 
         for ratio in QUICK_RATIOS:
             add_quick_ratio(page, ratio)
@@ -53,7 +108,6 @@ def scrape():
 
         browser.close()
         return data
-
 
 if __name__ == "__main__":
     result = scrape()

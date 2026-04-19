@@ -7,6 +7,7 @@ from urllib.parse import quote
 
 import requests
 from bs4 import BeautifulSoup, Tag
+from playwright.sync_api import sync_playwright
 
 from utils import clean_number, normalize_key, normalize_period
 
@@ -16,12 +17,93 @@ DEFAULT_SYMBOLS = ("RELIANCE",)
 RUNTIME_JSON_DIR = "json"
 
 HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0 Safari/537.36"
-    )
+    "User-Agent": "Mozilla/5.0"
 }
 
+QUICK_RATIOS = [
+    "Profit growth",
+    "Promoter holding",
+    "Sales growth",
+    "Debt to equity"
+]
+
+
+# ---------------- PLAYWRIGHT BLOCK ---------------- #
+
+def login(page):
+    page.goto("https://www.screener.in/login/")
+
+    page.fill('input[name="username"]', "angelscur@gmail.com")
+    page.fill('input[name="password"]', "Nava@#1352")
+
+    page.click('button[type="submit"]')
+    page.wait_for_timeout(2000)
+
+    if "login" in page.url:
+        print("❌ Login failed")
+        return False
+    else:
+        print("✅ Login successful")
+        return True
+
+
+def add_quick_ratio(page, text):
+    search = page.locator("#quick-ratio-search")
+
+    search.click()
+    search.fill("")
+    search.type(text, delay=100)
+
+    page.wait_for_timeout(500)
+
+    options = page.locator(".dropdown-content li")
+
+    for i in range(options.count()):
+        opt = options.nth(i)
+        if text.lower() in opt.inner_text().lower():
+            opt.click()
+            break
+
+    try:
+        page.wait_for_selector("li[data-source='quick-ratio']", timeout=3000)
+    except:
+        print(f"⚠️ Failed to add: {text}")
+
+    page.wait_for_timeout(500)
+
+
+def fetch_html_playwright(symbol: str) -> str:
+    url = BASE_URL.format(symbol=symbol)
+
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        page = browser.new_page()
+
+        success = login(page)
+        if not success:
+            browser.close()
+            raise Exception("Login failed")
+
+        page.goto(url)
+        page.wait_for_selector("#top-ratios")
+
+        for ratio in QUICK_RATIOS:
+            add_quick_ratio(page, ratio)
+
+        html = page.content()
+        browser.close()
+        return html
+
+
+# ---------------- REQUESTS FALLBACK ---------------- #
+
+def fetch_html(url: str) -> str:
+    response = requests.get(url, headers=HEADERS, timeout=30)
+    response.raise_for_status()
+    return response.text
+
+
+# ---------------- EXISTING CODE ---------------- #
 
 def normalize_symbol(symbol: str) -> str:
     clean_symbol = symbol.strip().upper()
@@ -30,17 +112,10 @@ def normalize_symbol(symbol: str) -> str:
     return clean_symbol
 
 
-def fetch_html(url: str) -> str:
-    response = requests.get(url, headers=HEADERS, timeout=30)
-    response.raise_for_status()
-    return response.text
-
-
 def _text_or_none(element: Optional[Tag]) -> Optional[str]:
     if not element:
         return None
-    text = element.get_text(" ", strip=True)
-    return text or None
+    return element.get_text(" ", strip=True) or None
 
 
 def _transpose_metric_table(table: Optional[Tag]) -> Dict[str, Dict[str, Optional[float]]]:
@@ -51,6 +126,7 @@ def _transpose_metric_table(table: Optional[Tag]) -> Dict[str, Dict[str, Optiona
         normalize_period(th.get_text(" ", strip=True))
         for th in table.select("thead th")[1:]
     ]
+
     table_data: Dict[str, Dict[str, Optional[float]]] = {
         header: {} for header in headers if header
     }
@@ -78,23 +154,9 @@ def extract_company_info(html: str, symbol: str, url: str) -> Dict[str, Optional
     info: Dict[str, Optional[str]] = {
         "symbol": normalize_symbol(symbol),
         "company_name": _text_or_none(soup.select_one("h1")),
-        "description": _text_or_none(soup.select_one(".company-profile .about"))
-        or _text_or_none(soup.select_one(".about")),
+        "description": _text_or_none(soup.select_one(".company-profile .about")),
         "source_url": url,
     }
-
-    if profile:
-        for link in profile.select("a[href]"):
-            label = link.get_text(" ", strip=True).lower()
-            href = link.get("href")
-            if not href:
-                continue
-            if label == "website":
-                info["website"] = href
-            elif label == "bse":
-                info["bse_url"] = href
-            elif label == "nse":
-                info["nse_url"] = href
 
     return info
 
@@ -104,56 +166,45 @@ def extract_top_ratios(html: str) -> Dict[str, Optional[float]]:
     ratios: Dict[str, Optional[float]] = {}
 
     for item in soup.select("#top-ratios li"):
-        name_elem = item.select_one(".name")
-        value_elem = item.select_one(".value")
-        if not name_elem or not value_elem:
-            continue
-
-        name = normalize_key(name_elem.get_text(" ", strip=True))
-        value = value_elem.get_text(" ", strip=True)
+        name = normalize_key(item.select_one(".name").get_text(" ", strip=True))
+        value = item.select_one(".value").get_text(" ", strip=True)
         ratios[name] = clean_number(value)
 
     return ratios
 
 
-def extract_profit_loss_table(html: str) -> Dict[str, Dict[str, Optional[float]]]:
+def extract_profit_loss_table(html: str):
     soup = BeautifulSoup(html, "html.parser")
     return _transpose_metric_table(soup.select_one("#profit-loss table.data-table"))
 
 
-def extract_balance_sheet_table(html: str) -> Dict[str, Dict[str, Optional[float]]]:
+def extract_balance_sheet_table(html: str):
     soup = BeautifulSoup(html, "html.parser")
     return _transpose_metric_table(soup.select_one("#balance-sheet table.data-table"))
 
 
-def extract_ratios_table(html: str) -> Dict[str, Dict[str, Optional[float]]]:
+def extract_ratios_table(html: str):
     soup = BeautifulSoup(html, "html.parser")
     return _transpose_metric_table(soup.select_one("#ratios table.data-table"))
 
 
-def extract_shareholding(html: str) -> Dict[str, Dict[str, Optional[float]]]:
+def extract_shareholding(html: str):
     soup = BeautifulSoup(html, "html.parser")
-    result: Dict[str, Dict[str, Optional[float]]] = {}
+    return _transpose_metric_table(soup.select_one("#quarterly-shp table"))
 
-    sources = (
-        ("quarterly", soup.select_one("#quarterly-shp table")),
-        ("yearly", soup.select_one("#yearly-shp table")),
-    )
 
-    for source, table in sources:
-        table_data = _transpose_metric_table(table)
-        for period, metrics in table_data.items():
-            # Screener has duplicate labels across quarterly and yearly tables.
-            # Prefixing the source preserves both tables in one period-keyed dict.
-            result[f"{source}:{period}"] = metrics
-
-    return result
-
+# ---------------- MAIN ---------------- #
 
 def scrape_company(symbol: str) -> Dict[str, Any]:
     clean_symbol = normalize_symbol(symbol)
-    url = BASE_URL.format(symbol=quote(normalize_symbol(clean_symbol), safe=""))
-    html = fetch_html(url)
+    url = BASE_URL.format(symbol=quote(clean_symbol))
+
+    try:
+        html = fetch_html_playwright(clean_symbol)
+    except Exception as e:
+        print("⚠️ Playwright failed, falling back:", e)
+        html = fetch_html(url)
+
     data = {
         "symbol": clean_symbol,
         "company_info": extract_company_info(html, clean_symbol, url),
@@ -164,68 +215,16 @@ def scrape_company(symbol: str) -> Dict[str, Any]:
         "shareholding": extract_shareholding(html),
         "scraped_at": datetime.now(timezone.utc).isoformat(),
     }
-    save_runtime_json(data)
+
     return data
 
 
-def save_runtime_json(data: Dict[str, Any], output_dir: str = RUNTIME_JSON_DIR) -> Dict[str, Path]:
-    symbol = normalize_symbol(str(data["symbol"]))
-    symbol_dir = Path(output_dir) / symbol
-    symbol_dir.mkdir(parents=True, exist_ok=True)
-
-    # latest.json is the full scrape snapshot for quick inspection.
-    written_files = {
-        "latest": symbol_dir / "latest.json",
-        "company_info": symbol_dir / "company_info.json",
-        "top_ratios": symbol_dir / "top_ratios.json",
-        "profit_loss": symbol_dir / "profit_loss.json",
-        "balance_sheet": symbol_dir / "balance_sheet.json",
-        "ratios_history": symbol_dir / "ratios_history.json",
-        "shareholding": symbol_dir / "shareholding.json",
-    }
-
-    written_files["latest"].write_text(
-        json.dumps(data, indent=2, ensure_ascii=False),
-        encoding="utf-8",
-    )
-
-    for section in (
-        "company_info",
-        "top_ratios",
-        "profit_loss",
-        "balance_sheet",
-        "ratios_history",
-        "shareholding",
-    ):
-        written_files[section].write_text(
-            json.dumps(data.get(section, {}), indent=2, ensure_ascii=False),
-            encoding="utf-8",
-        )
-
-    return written_files
-
-
-def _print_summary(data: Dict[str, Any], sections: Iterable[str]) -> None:
-    print(json.dumps({key: data.get(key) for key in sections}, indent=2))
-
-
-def main() -> None:
+def main():
     symbols = tuple(sys.argv[1:]) or DEFAULT_SYMBOLS
 
     for symbol in symbols:
         data = scrape_company(symbol)
-        _print_summary(
-            data,
-            (
-                "symbol",
-                "company_info",
-                "top_ratios",
-                "profit_loss",
-                "balance_sheet",
-                "ratios_history",
-                "shareholding",
-            ),
-        )
+        print(json.dumps(data["top_ratios"], indent=2))
 
 
 if __name__ == "__main__":

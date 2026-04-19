@@ -11,9 +11,11 @@ Flow:
 
 import argparse
 import json
+import logging
 import os
 import re
 import sqlite3
+import sys
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -21,6 +23,14 @@ from dataclasses import asdict, dataclass, field
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Mapping, Optional, Sequence, Tuple
+
+sys_path_insert = Path(__file__).resolve().parent.parent
+if str(sys_path_insert) not in sys.path:
+    sys.path.insert(0, str(sys_path_insert))
+
+from Utils import get_logger
+
+logger = get_logger()
 
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -837,22 +847,20 @@ def print_summary(
     applied_counts: Mapping[str, int],
     report_path: Path,
 ) -> None:
-    print("Mode: update")
-    print(f"Report: {report_path}")
-    print()
+    logger.info("Mode: update")
+    logger.info(f"Report: {report_path}")
 
     for evaluation in evaluations:
-        print(
+        logger.info(
             f"{evaluation.symbol}: {evaluation.status} "
             f"({evaluation.planned_db_action})"
         )
         for reason in evaluation.reasons:
-            print(f"  - {reason}")
-        print()
+            logger.info(f"  - {reason}")
 
-    print("Database actions:")
+    logger.info("Database actions:")
     for action, count in applied_counts.items():
-        print(f"  {action}: {count}")
+        logger.info(f"  {action}: {count}")
 
 
 def main() -> None:

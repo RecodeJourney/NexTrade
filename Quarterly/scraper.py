@@ -4,12 +4,20 @@ from pathlib import Path
 import sys
 from typing import Any, Dict, Iterable, Optional
 from urllib.parse import quote
-
+import logging
 import requests
 from bs4 import BeautifulSoup, Tag
 from playwright.sync_api import sync_playwright
 
+# Add parent directory to path for direct execution
+sys_path_insert = Path(__file__).resolve().parent.parent
+if str(sys_path_insert) not in sys.path:
+    sys.path.insert(0, str(sys_path_insert))
+
 from utils import clean_number, normalize_key, normalize_period
+from Utils import get_logger
+
+logger = get_logger()
 
 
 BASE_URL = "https://www.screener.in/company/{symbol}/consolidated/"
@@ -28,7 +36,7 @@ QUICK_RATIOS = [
 ]
 
 
-# ---------------- PLAYWRIGHT BLOCK ---------------- #
+# ---------------- LOGIN BLOCK ---------------- #
 
 def login(page):
     page.goto("https://www.screener.in/login/")
@@ -40,10 +48,10 @@ def login(page):
     page.wait_for_timeout(2000)
 
     if "login" in page.url:
-        print("❌ Login failed")
+        logger.error("Login failed")
         return False
     else:
-        print("✅ Login successful")
+        logger.info(f"Login successful: {page.url}")
         return True
 
 
@@ -67,7 +75,7 @@ def add_quick_ratio(page, text):
     try:
         page.wait_for_selector("li[data-source='quick-ratio']", timeout=3000)
     except:
-        print(f"⚠️ Failed to add: {text}")
+        logger.warning(f"Failed to add: {text}")
 
     page.wait_for_timeout(500)
 
@@ -103,7 +111,7 @@ def fetch_html(url: str) -> str:
     return response.text
 
 
-# ---------------- EXISTING CODE ---------------- #
+# ---------------- UTILITY CODE ---------------- #
 
 def normalize_symbol(symbol: str) -> str:
     clean_symbol = symbol.strip().upper()
@@ -146,6 +154,7 @@ def _transpose_metric_table(table: Optional[Tag]) -> Dict[str, Dict[str, Optiona
 
     return table_data
 
+# ---------------- EXTRACTION CODE ---------------- #
 
 def extract_company_info(html: str, symbol: str, url: str) -> Dict[str, Optional[str]]:
     soup = BeautifulSoup(html, "html.parser")
@@ -193,7 +202,7 @@ def extract_shareholding(html: str):
     return _transpose_metric_table(soup.select_one("#quarterly-shp table"))
 
 
-# ---------------- MAIN ---------------- #
+# ---------------- IMPORTABLE ---------------- #
 
 def scrape_company(symbol: str) -> Dict[str, Any]:
     clean_symbol = normalize_symbol(symbol)
@@ -202,7 +211,7 @@ def scrape_company(symbol: str) -> Dict[str, Any]:
     try:
         html = fetch_html_playwright(clean_symbol)
     except Exception as e:
-        print("⚠️ Playwright failed, falling back:", e)
+        logger.warning(f"Playwright failed, falling back: {e}")
         html = fetch_html(url)
 
     data = {
@@ -218,14 +227,11 @@ def scrape_company(symbol: str) -> Dict[str, Any]:
 
     return data
 
+# ---------------- STANDALONE MAIN CODE ---------------- #
 
-def main():
+if __name__ == "__main__":
     symbols = tuple(sys.argv[1:]) or DEFAULT_SYMBOLS
 
     for symbol in symbols:
         data = scrape_company(symbol)
-        print(json.dumps(data["top_ratios"], indent=2))
-
-
-if __name__ == "__main__":
-    main()
+        logger.info(json.dumps(data["top_ratios"], indent=2))

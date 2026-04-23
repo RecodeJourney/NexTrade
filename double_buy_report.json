@@ -1,0 +1,1677 @@
+[
+    {
+        "cycle_id": 1,
+        "sell_details": {
+            "row": 235,
+            "price": 47.75417949895625
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 225,
+                "buy_price": 49.055204127233374,
+                "p_l_inr": -1.3,
+                "bars_held": 10
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 234,
+                "buy_price": 43.178358506629806,
+                "p_l_inr": 4.58,
+                "bars_held": 1
+            }
+        ],
+        "total_cycle_p_l": 3.27,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 2,
+        "sell_details": {
+            "row": 247,
+            "price": 48.04399866789325
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 239,
+                "buy_price": 40.675379140374865,
+                "p_l_inr": 7.37,
+                "bars_held": 8
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 246,
+                "buy_price": 46.34751703812309,
+                "p_l_inr": 1.7,
+                "bars_held": 1
+            }
+        ],
+        "total_cycle_p_l": 9.07,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 3,
+        "sell_details": {
+            "row": 266,
+            "price": 50.11347565123591
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 254,
+                "buy_price": 43.783645493335854,
+                "p_l_inr": 6.33,
+                "bars_held": 12
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 263,
+                "buy_price": 42.19834718224171,
+                "p_l_inr": 7.92,
+                "bars_held": 3
+            }
+        ],
+        "total_cycle_p_l": 14.24,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 4,
+        "sell_details": {
+            "row": 454,
+            "price": 76.6027520677627
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 271,
+                "buy_price": 45.72863658368023,
+                "p_l_inr": 30.87,
+                "bars_held": 183
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 292,
+                "buy_price": 31.459706434098287,
+                "p_l_inr": 45.14,
+                "bars_held": 162
+            }
+        ],
+        "total_cycle_p_l": 76.02,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 5,
+        "sell_details": {
+            "row": 561,
+            "price": 105.90745273263296
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 550,
+                "buy_price": 83.35962174913446,
+                "p_l_inr": 22.55,
+                "bars_held": 11
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 558,
+                "buy_price": 89.95125815283515,
+                "p_l_inr": 15.96,
+                "bars_held": 3
+            }
+        ],
+        "total_cycle_p_l": 38.5,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 6,
+        "sell_details": {
+            "row": 581,
+            "price": 101.45690081329488
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 566,
+                "buy_price": 86.03850584888562,
+                "p_l_inr": 15.42,
+                "bars_held": 15
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 574,
+                "buy_price": 83.30703678029168,
+                "p_l_inr": 18.15,
+                "bars_held": 7
+            }
+        ],
+        "total_cycle_p_l": 33.57,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 7,
+        "sell_details": {
+            "row": 599,
+            "price": 91.1199904782334
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 589,
+                "buy_price": 80.63554190508454,
+                "p_l_inr": 10.48,
+                "bars_held": 10
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 596,
+                "buy_price": 83.10067983165472,
+                "p_l_inr": 8.02,
+                "bars_held": 3
+            }
+        ],
+        "total_cycle_p_l": 18.5,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 8,
+        "sell_details": {
+            "row": 615,
+            "price": 95.2922047461764
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 603,
+                "buy_price": 85.02121586522932,
+                "p_l_inr": 10.27,
+                "bars_held": 12
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 612,
+                "buy_price": 87.41875171221824,
+                "p_l_inr": 7.87,
+                "bars_held": 3
+            }
+        ],
+        "total_cycle_p_l": 18.14,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 9,
+        "sell_details": {
+            "row": 638,
+            "price": 79.86171201811293
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 627,
+                "buy_price": 76.41390496400487,
+                "p_l_inr": 3.45,
+                "bars_held": 11
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 634,
+                "buy_price": 74.95939852121391,
+                "p_l_inr": 4.9,
+                "bars_held": 4
+            }
+        ],
+        "total_cycle_p_l": 8.35,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 10,
+        "sell_details": {
+            "row": 692,
+            "price": 109.4716468491384
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 640,
+                "buy_price": 74.06579130626797,
+                "p_l_inr": 35.41,
+                "bars_held": 52
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 648,
+                "buy_price": 68.74062970545764,
+                "p_l_inr": 40.73,
+                "bars_held": 44
+            }
+        ],
+        "total_cycle_p_l": 76.14,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 11,
+        "sell_details": {
+            "row": 710,
+            "price": 89.88374714782036
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 700,
+                "buy_price": 90.35120624284292,
+                "p_l_inr": -0.47,
+                "bars_held": 10
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 703,
+                "buy_price": 85.78305622929136,
+                "p_l_inr": 4.1,
+                "bars_held": 7
+            }
+        ],
+        "total_cycle_p_l": 3.63,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 12,
+        "sell_details": {
+            "row": 720,
+            "price": 84.05033269916837
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 712,
+                "buy_price": 80.49502094452731,
+                "p_l_inr": 3.56,
+                "bars_held": 8
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 717,
+                "buy_price": 81.41087265163985,
+                "p_l_inr": 2.64,
+                "bars_held": 3
+            }
+        ],
+        "total_cycle_p_l": 6.19,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 13,
+        "sell_details": {
+            "row": 728,
+            "price": 77.45414849685818
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 721,
+                "buy_price": 81.27443298994324,
+                "p_l_inr": -3.82,
+                "bars_held": 7
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 727,
+                "buy_price": 74.19754084688435,
+                "p_l_inr": 3.26,
+                "bars_held": 1
+            }
+        ],
+        "total_cycle_p_l": -0.56,
+        "status": "Loss"
+    },
+    {
+        "cycle_id": 14,
+        "sell_details": {
+            "row": 831,
+            "price": 77.08373901766801
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 730,
+                "buy_price": 71.65258887745482,
+                "p_l_inr": 5.43,
+                "bars_held": 101
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 745,
+                "buy_price": 54.10601387733287,
+                "p_l_inr": 22.98,
+                "bars_held": 86
+            }
+        ],
+        "total_cycle_p_l": 28.41,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 15,
+        "sell_details": {
+            "row": 850,
+            "price": 60.15955243019083
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 832,
+                "buy_price": 71.54984475629915,
+                "p_l_inr": -11.39,
+                "bars_held": 18
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 846,
+                "buy_price": 52.30119623011096,
+                "p_l_inr": 7.86,
+                "bars_held": 4
+            }
+        ],
+        "total_cycle_p_l": -3.53,
+        "status": "Loss"
+    },
+    {
+        "cycle_id": 16,
+        "sell_details": {
+            "row": 902,
+            "price": 114.64327785504284
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 853,
+                "buy_price": 55.34114471556138,
+                "p_l_inr": 59.3,
+                "bars_held": 49
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 863,
+                "buy_price": 64.63497359815672,
+                "p_l_inr": 50.01,
+                "bars_held": 39
+            }
+        ],
+        "total_cycle_p_l": 109.31,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 17,
+        "sell_details": {
+            "row": 1206,
+            "price": 220.9375441407994
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 1198,
+                "buy_price": 187.7506226894135,
+                "p_l_inr": 33.19,
+                "bars_held": 8
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 1206,
+                "buy_price": 206.20324831693637,
+                "p_l_inr": 14.73,
+                "bars_held": 0
+            }
+        ],
+        "total_cycle_p_l": 47.92,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 18,
+        "sell_details": {
+            "row": 1225,
+            "price": 224.7151274311173
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 1217,
+                "buy_price": 188.98777924892113,
+                "p_l_inr": 35.73,
+                "bars_held": 8
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 1224,
+                "buy_price": 213.91273311742543,
+                "p_l_inr": 10.8,
+                "bars_held": 1
+            }
+        ],
+        "total_cycle_p_l": 46.53,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 19,
+        "sell_details": {
+            "row": 1395,
+            "price": 223.0114904287238
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 1235,
+                "buy_price": 174.70642792195767,
+                "p_l_inr": 48.31,
+                "bars_held": 160
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 1250,
+                "buy_price": 186.17769916531628,
+                "p_l_inr": 36.83,
+                "bars_held": 145
+            }
+        ],
+        "total_cycle_p_l": 85.14,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 20,
+        "sell_details": {
+            "row": 1499,
+            "price": 226.4410247791725
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 1401,
+                "buy_price": 203.30497885397452,
+                "p_l_inr": 23.14,
+                "bars_held": 98
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 1497,
+                "buy_price": 209.85301265537163,
+                "p_l_inr": 16.59,
+                "bars_held": 2
+            }
+        ],
+        "total_cycle_p_l": 39.72,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 21,
+        "sell_details": {
+            "row": 1529,
+            "price": 248.4683239484706
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 1503,
+                "buy_price": 200.4101276116733,
+                "p_l_inr": 48.06,
+                "bars_held": 26
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 1519,
+                "buy_price": 227.8560693050702,
+                "p_l_inr": 20.61,
+                "bars_held": 10
+            }
+        ],
+        "total_cycle_p_l": 68.67,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 22,
+        "sell_details": {
+            "row": 1539,
+            "price": 239.33277111597175
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 1532,
+                "buy_price": 238.36021460683392,
+                "p_l_inr": 0.97,
+                "bars_held": 7
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 1537,
+                "buy_price": 226.1456039040557,
+                "p_l_inr": 13.19,
+                "bars_held": 2
+            }
+        ],
+        "total_cycle_p_l": 14.16,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 23,
+        "sell_details": {
+            "row": 1551,
+            "price": 267.05653104515324
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 1542,
+                "buy_price": 230.60790119012353,
+                "p_l_inr": 36.45,
+                "bars_held": 9
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 1545,
+                "buy_price": 228.4717366706438,
+                "p_l_inr": 38.58,
+                "bars_held": 6
+            }
+        ],
+        "total_cycle_p_l": 75.03,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 24,
+        "sell_details": {
+            "row": 1759,
+            "price": 393.4492135316143
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 1738,
+                "buy_price": 307.6824160081623,
+                "p_l_inr": 85.77,
+                "bars_held": 21
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 1745,
+                "buy_price": 290.93575953025544,
+                "p_l_inr": 102.51,
+                "bars_held": 14
+            }
+        ],
+        "total_cycle_p_l": 188.28,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 25,
+        "sell_details": {
+            "row": 1834,
+            "price": 405.5929544705176
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 1773,
+                "buy_price": 317.28014427360216,
+                "p_l_inr": 88.31,
+                "bars_held": 61
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 1784,
+                "buy_price": 333.5998846745174,
+                "p_l_inr": 71.99,
+                "bars_held": 50
+            }
+        ],
+        "total_cycle_p_l": 160.31,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 26,
+        "sell_details": {
+            "row": 1851,
+            "price": 334.5403241425136
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 1837,
+                "buy_price": 344.37285861067386,
+                "p_l_inr": -9.83,
+                "bars_held": 14
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 1849,
+                "buy_price": 303.9728561443654,
+                "p_l_inr": 30.57,
+                "bars_held": 2
+            }
+        ],
+        "total_cycle_p_l": 20.73,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 27,
+        "sell_details": {
+            "row": 2054,
+            "price": 257.478510564603
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 1854,
+                "buy_price": 307.57144144411467,
+                "p_l_inr": -50.09,
+                "bars_held": 200
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 1870,
+                "buy_price": 365.80866238236905,
+                "p_l_inr": -108.33,
+                "bars_held": 184
+            }
+        ],
+        "total_cycle_p_l": -158.42,
+        "status": "Loss"
+    },
+    {
+        "cycle_id": 28,
+        "sell_details": {
+            "row": 2066,
+            "price": 240.1198889047019
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 2060,
+                "buy_price": 216.25584397444604,
+                "p_l_inr": 23.86,
+                "bars_held": 6
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 2064,
+                "buy_price": 222.12274067081285,
+                "p_l_inr": 18.0,
+                "bars_held": 2
+            }
+        ],
+        "total_cycle_p_l": 41.86,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 29,
+        "sell_details": {
+            "row": 2128,
+            "price": 345.4374711412783
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 2078,
+                "buy_price": 201.48560609067212,
+                "p_l_inr": 143.95,
+                "bars_held": 50
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 2084,
+                "buy_price": 195.0658310042197,
+                "p_l_inr": 150.37,
+                "bars_held": 44
+            }
+        ],
+        "total_cycle_p_l": 294.32,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 30,
+        "sell_details": {
+            "row": 2204,
+            "price": 334.8826735755065
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 2192,
+                "buy_price": 293.92795262898966,
+                "p_l_inr": 40.95,
+                "bars_held": 12
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 2200,
+                "buy_price": 308.8813125717604,
+                "p_l_inr": 26.0,
+                "bars_held": 4
+            }
+        ],
+        "total_cycle_p_l": 66.96,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 31,
+        "sell_details": {
+            "row": 2228,
+            "price": 387.75536732689
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 2206,
+                "buy_price": 308.0892557996714,
+                "p_l_inr": 79.67,
+                "bars_held": 22
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 2220,
+                "buy_price": 322.9942784685759,
+                "p_l_inr": 64.76,
+                "bars_held": 8
+            }
+        ],
+        "total_cycle_p_l": 144.43,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 32,
+        "sell_details": {
+            "row": 2328,
+            "price": 386.0065955269818
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 2311,
+                "buy_price": 364.14506586448454,
+                "p_l_inr": 21.86,
+                "bars_held": 17
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 2319,
+                "buy_price": 369.2514522932485,
+                "p_l_inr": 16.76,
+                "bars_held": 9
+            }
+        ],
+        "total_cycle_p_l": 38.62,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 33,
+        "sell_details": {
+            "row": 2349,
+            "price": 355.9575637239633
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 2332,
+                "buy_price": 363.9866983011851,
+                "p_l_inr": -8.03,
+                "bars_held": 17
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 2346,
+                "buy_price": 321.74411126318194,
+                "p_l_inr": 34.21,
+                "bars_held": 3
+            }
+        ],
+        "total_cycle_p_l": 26.18,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 34,
+        "sell_details": {
+            "row": 2366,
+            "price": 362.14840765727416
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 2358,
+                "buy_price": 329.5776776382954,
+                "p_l_inr": 32.57,
+                "bars_held": 8
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 2364,
+                "buy_price": 343.05771330936443,
+                "p_l_inr": 19.09,
+                "bars_held": 2
+            }
+        ],
+        "total_cycle_p_l": 51.66,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 35,
+        "sell_details": {
+            "row": 2373,
+            "price": 347.1684275145015
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 2367,
+                "buy_price": 337.1935040404516,
+                "p_l_inr": 9.97,
+                "bars_held": 6
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 2370,
+                "buy_price": 327.8848447191266,
+                "p_l_inr": 19.28,
+                "bars_held": 3
+            }
+        ],
+        "total_cycle_p_l": 29.26,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 36,
+        "sell_details": {
+            "row": 2380,
+            "price": 354.8037031385688
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 2375,
+                "buy_price": 321.05585104692017,
+                "p_l_inr": 33.75,
+                "bars_held": 5
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 2379,
+                "buy_price": 328.52137824780283,
+                "p_l_inr": 26.28,
+                "bars_held": 1
+            }
+        ],
+        "total_cycle_p_l": 60.03,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 37,
+        "sell_details": {
+            "row": 2618,
+            "price": 301.01351725696003
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 2389,
+                "buy_price": 291.53667760445217,
+                "p_l_inr": 9.48,
+                "bars_held": 229
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 2393,
+                "buy_price": 296.0497686463041,
+                "p_l_inr": 4.96,
+                "bars_held": 225
+            }
+        ],
+        "total_cycle_p_l": 14.44,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 38,
+        "sell_details": {
+            "row": 3193,
+            "price": 422.47489780753193
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 2900,
+                "buy_price": 221.80627708121983,
+                "p_l_inr": 200.67,
+                "bars_held": 293
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 2920,
+                "buy_price": 302.7219210613417,
+                "p_l_inr": 119.75,
+                "bars_held": 273
+            }
+        ],
+        "total_cycle_p_l": 320.42,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 39,
+        "sell_details": {
+            "row": 3394,
+            "price": 237.96081696734169
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 3274,
+                "buy_price": 233.5439157480128,
+                "p_l_inr": 4.42,
+                "bars_held": 120
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 3283,
+                "buy_price": 247.2378369982835,
+                "p_l_inr": -9.28,
+                "bars_held": 111
+            }
+        ],
+        "total_cycle_p_l": -4.86,
+        "status": "Loss"
+    },
+    {
+        "cycle_id": 40,
+        "sell_details": {
+            "row": 3414,
+            "price": 250.89473466449755
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 3395,
+                "buy_price": 215.93897944268423,
+                "p_l_inr": 34.96,
+                "bars_held": 19
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 3398,
+                "buy_price": 208.44305089923023,
+                "p_l_inr": 42.45,
+                "bars_held": 16
+            }
+        ],
+        "total_cycle_p_l": 77.41,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 41,
+        "sell_details": {
+            "row": 3432,
+            "price": 252.19686638105077
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 3421,
+                "buy_price": 208.94254424520835,
+                "p_l_inr": 43.25,
+                "bars_held": 11
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 3426,
+                "buy_price": 208.82622373266443,
+                "p_l_inr": 43.37,
+                "bars_held": 6
+            }
+        ],
+        "total_cycle_p_l": 86.62,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 42,
+        "sell_details": {
+            "row": 3452,
+            "price": 289.0188719564311
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 3435,
+                "buy_price": 240.66562485142455,
+                "p_l_inr": 48.35,
+                "bars_held": 17
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 3440,
+                "buy_price": 240.4331399435588,
+                "p_l_inr": 48.59,
+                "bars_held": 12
+            }
+        ],
+        "total_cycle_p_l": 96.94,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 43,
+        "sell_details": {
+            "row": 3468,
+            "price": 255.44086843190104
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 3462,
+                "buy_price": 240.18580067502396,
+                "p_l_inr": 15.26,
+                "bars_held": 6
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 3466,
+                "buy_price": 227.62800939223771,
+                "p_l_inr": 27.81,
+                "bars_held": 2
+            }
+        ],
+        "total_cycle_p_l": 43.07,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 44,
+        "sell_details": {
+            "row": 3494,
+            "price": 219.1842383102315
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 3471,
+                "buy_price": 224.14197981309087,
+                "p_l_inr": -4.96,
+                "bars_held": 23
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 3491,
+                "buy_price": 201.47728954176404,
+                "p_l_inr": 17.71,
+                "bars_held": 3
+            }
+        ],
+        "total_cycle_p_l": 12.75,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 45,
+        "sell_details": {
+            "row": 3503,
+            "price": 206.7190055329983
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 3497,
+                "buy_price": 206.31081624268353,
+                "p_l_inr": 0.41,
+                "bars_held": 6
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 3501,
+                "buy_price": 192.72435525535576,
+                "p_l_inr": 13.99,
+                "bars_held": 2
+            }
+        ],
+        "total_cycle_p_l": 14.4,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 46,
+        "sell_details": {
+            "row": 3519,
+            "price": 213.25890859899127
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 3506,
+                "buy_price": 183.68419359457147,
+                "p_l_inr": 29.57,
+                "bars_held": 13
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 3510,
+                "buy_price": 186.7445437465858,
+                "p_l_inr": 26.51,
+                "bars_held": 9
+            }
+        ],
+        "total_cycle_p_l": 56.09,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 47,
+        "sell_details": {
+            "row": 4071,
+            "price": 366.270340035342
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 3522,
+                "buy_price": 188.57882906549605,
+                "p_l_inr": 177.69,
+                "bars_held": 549
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 3993,
+                "buy_price": 280.3720949828394,
+                "p_l_inr": 85.9,
+                "bars_held": 78
+            }
+        ],
+        "total_cycle_p_l": 263.59,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 48,
+        "sell_details": {
+            "row": 4109,
+            "price": 475.7307059575757
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 4076,
+                "buy_price": 337.1667926785559,
+                "p_l_inr": 138.56,
+                "bars_held": 33
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 4080,
+                "buy_price": 343.0122315404313,
+                "p_l_inr": 132.72,
+                "bars_held": 29
+            }
+        ],
+        "total_cycle_p_l": 271.28,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 49,
+        "sell_details": {
+            "row": 4511,
+            "price": 682.4975210702753
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 4493,
+                "buy_price": 631.8671546300365,
+                "p_l_inr": 50.63,
+                "bars_held": 18
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 4507,
+                "buy_price": 655.024508984036,
+                "p_l_inr": 27.47,
+                "bars_held": 4
+            }
+        ],
+        "total_cycle_p_l": 78.1,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 50,
+        "sell_details": {
+            "row": 4528,
+            "price": 769.2541085839915
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 4520,
+                "buy_price": 648.464330529818,
+                "p_l_inr": 120.79,
+                "bars_held": 8
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 4526,
+                "buy_price": 721.3943756963633,
+                "p_l_inr": 47.86,
+                "bars_held": 2
+            }
+        ],
+        "total_cycle_p_l": 168.65,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 51,
+        "sell_details": {
+            "row": 4539,
+            "price": 772.1160548291726
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 4529,
+                "buy_price": 726.3206437573753,
+                "p_l_inr": 45.8,
+                "bars_held": 10
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 4532,
+                "buy_price": 711.0840239738599,
+                "p_l_inr": 61.03,
+                "bars_held": 7
+            }
+        ],
+        "total_cycle_p_l": 106.83,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 52,
+        "sell_details": {
+            "row": 4556,
+            "price": 929.1043748450992
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 4544,
+                "buy_price": 665.8733523187171,
+                "p_l_inr": 263.23,
+                "bars_held": 12
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 4548,
+                "buy_price": 727.5430382865336,
+                "p_l_inr": 201.56,
+                "bars_held": 8
+            }
+        ],
+        "total_cycle_p_l": 464.79,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 53,
+        "sell_details": {
+            "row": 4572,
+            "price": 899.2264379428904
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 4560,
+                "buy_price": 868.7585702179734,
+                "p_l_inr": 30.47,
+                "bars_held": 12
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 4568,
+                "buy_price": 856.5963512534255,
+                "p_l_inr": 42.63,
+                "bars_held": 4
+            }
+        ],
+        "total_cycle_p_l": 73.1,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 54,
+        "sell_details": {
+            "row": 4584,
+            "price": 1004.331818697902
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 4575,
+                "buy_price": 825.8717500067532,
+                "p_l_inr": 178.46,
+                "bars_held": 9
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 4580,
+                "buy_price": 838.6737386490545,
+                "p_l_inr": 165.66,
+                "bars_held": 4
+            }
+        ],
+        "total_cycle_p_l": 344.12,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 55,
+        "sell_details": {
+            "row": 4691,
+            "price": 1370.54539803786
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 4674,
+                "buy_price": 1255.5079134838284,
+                "p_l_inr": 115.04,
+                "bars_held": 17
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 4685,
+                "buy_price": 1194.5503978897982,
+                "p_l_inr": 176.0,
+                "bars_held": 6
+            }
+        ],
+        "total_cycle_p_l": 291.03,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 56,
+        "sell_details": {
+            "row": 4707,
+            "price": 1208.7314714667446
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 4700,
+                "buy_price": 1082.5474788958118,
+                "p_l_inr": 126.18,
+                "bars_held": 7
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 4706,
+                "buy_price": 1097.6323852059963,
+                "p_l_inr": 111.1,
+                "bars_held": 1
+            }
+        ],
+        "total_cycle_p_l": 237.28,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 57,
+        "sell_details": {
+            "row": 4733,
+            "price": 997.7403299616682
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 4727,
+                "buy_price": 866.3426671045175,
+                "p_l_inr": 131.4,
+                "bars_held": 6
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 4732,
+                "buy_price": 942.0012807488292,
+                "p_l_inr": 55.74,
+                "bars_held": 1
+            }
+        ],
+        "total_cycle_p_l": 187.14,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 58,
+        "sell_details": {
+            "row": 4757,
+            "price": 1059.934305836263
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 4738,
+                "buy_price": 879.461827471105,
+                "p_l_inr": 180.47,
+                "bars_held": 19
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 4753,
+                "buy_price": 1015.1114290308903,
+                "p_l_inr": 44.82,
+                "bars_held": 4
+            }
+        ],
+        "total_cycle_p_l": 225.3,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 59,
+        "sell_details": {
+            "row": 4903,
+            "price": 861.5545869606904
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 4758,
+                "buy_price": 995.7706038211708,
+                "p_l_inr": -134.22,
+                "bars_held": 145
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 4790,
+                "buy_price": 620.1962574469362,
+                "p_l_inr": 241.36,
+                "bars_held": 113
+            }
+        ],
+        "total_cycle_p_l": 107.14,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 60,
+        "sell_details": {
+            "row": 4943,
+            "price": 1153.9862840807816
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 4911,
+                "buy_price": 726.06619840397,
+                "p_l_inr": 427.92,
+                "bars_held": 32
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 4923,
+                "buy_price": 829.4576880647651,
+                "p_l_inr": 324.53,
+                "bars_held": 20
+            }
+        ],
+        "total_cycle_p_l": 752.45,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 61,
+        "sell_details": {
+            "row": 5088,
+            "price": 763.4054733502168
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 5033,
+                "buy_price": 533.0366737140702,
+                "p_l_inr": 230.37,
+                "bars_held": 55
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 5049,
+                "buy_price": 641.6122903534235,
+                "p_l_inr": 121.79,
+                "bars_held": 39
+            }
+        ],
+        "total_cycle_p_l": 352.16,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 62,
+        "sell_details": {
+            "row": 5116,
+            "price": 700.0466289190612
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 5092,
+                "buy_price": 721.7657715447142,
+                "p_l_inr": -21.72,
+                "bars_held": 24
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 5100,
+                "buy_price": 624.2354297584785,
+                "p_l_inr": 75.81,
+                "bars_held": 16
+            }
+        ],
+        "total_cycle_p_l": 54.09,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 63,
+        "sell_details": {
+            "row": 5135,
+            "price": 809.6703999906356
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 5121,
+                "buy_price": 614.4004819789229,
+                "p_l_inr": 195.27,
+                "bars_held": 14
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 5133,
+                "buy_price": 766.7858322314429,
+                "p_l_inr": 42.88,
+                "bars_held": 2
+            }
+        ],
+        "total_cycle_p_l": 238.15,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 64,
+        "sell_details": {
+            "row": 5257,
+            "price": 1404.089301408743
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 5165,
+                "buy_price": 456.2294793977755,
+                "p_l_inr": 947.86,
+                "bars_held": 92
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 5184,
+                "buy_price": 420.1878303843724,
+                "p_l_inr": 983.9,
+                "bars_held": 73
+            }
+        ],
+        "total_cycle_p_l": 1931.76,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 65,
+        "sell_details": {
+            "row": 5541,
+            "price": 1057.6517746932752
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 5422,
+                "buy_price": 870.2918386403528,
+                "p_l_inr": 187.36,
+                "bars_held": 119
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 5427,
+                "buy_price": 830.541880950331,
+                "p_l_inr": 227.11,
+                "bars_held": 114
+            }
+        ],
+        "total_cycle_p_l": 414.47,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 66,
+        "sell_details": {
+            "row": 5581,
+            "price": 1339.2144782258763
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 5547,
+                "buy_price": 825.7412217655109,
+                "p_l_inr": 513.47,
+                "bars_held": 34
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 5555,
+                "buy_price": 840.4473909534062,
+                "p_l_inr": 498.77,
+                "bars_held": 26
+            }
+        ],
+        "total_cycle_p_l": 1012.24,
+        "status": "Profit"
+    },
+    {
+        "cycle_id": 67,
+        "sell_details": {
+            "row": 5592,
+            "price": 1253.1705503315095
+        },
+        "trades": [
+            {
+                "buy_number": 1,
+                "buy_row": 5583,
+                "buy_price": 1190.3632375026434,
+                "p_l_inr": 62.81,
+                "bars_held": 9
+            },
+            {
+                "buy_number": 2,
+                "buy_row": 5589,
+                "buy_price": 1147.5832219822626,
+                "p_l_inr": 105.59,
+                "bars_held": 3
+            }
+        ],
+        "total_cycle_p_l": 168.39,
+        "status": "Profit"
+    }
+]

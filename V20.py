@@ -7,9 +7,9 @@ import csv
 def make_candle(row):
     return {
         "open": float(row[0]),
-        "close": float(row[1]),
-        "high": float(row[2]),
-        "low": float(row[3]),
+        "high": float(row[1]),
+        "low": float(row[2]),
+        "close": float(row[3]),
         "volume": float(row[4])
     }
 

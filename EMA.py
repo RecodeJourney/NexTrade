@@ -91,7 +91,7 @@ def EMA():
 
         if pd.notna(ma200):
 
-            if (ma200 > ma50 > ma20 > close) and system_state == 1 and ma20*0.75 > close:
+            if (ma200 > ma50 > ma20 > close) and system_state == 1 > close:
                 print(f"{i}: BUY =====> {close}")
                 update("BUY", close, i)
                 system_state = 2
